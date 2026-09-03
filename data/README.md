@@ -12,8 +12,8 @@ FragPipe protein-level TSVs, two batches:
 `BY` in a filename is the legacy name for the non-photobleached control (`NPB`).
 `1-27-PB-pos-1` and `5-22-BY-neg-2` do not exist — those runs were not acquired.
 
-Everything in the repository reads this folder: `src/oe_analysis.py`, both UMAP scripts, and
-`notebooks/deg_analysis.ipynb`. It yields 1,343 gene symbols across the 17 runs.
+Every OE script reads this folder: `src/oe_analysis.py` and both UMAP scripts. It yields
+1,343 gene symbols across the 17 runs.
 
 ### The other search, deliberately not included
 
@@ -45,7 +45,7 @@ Read as `SC_NPB_neg`, `SC_NPB_pos`, `SC_PB_neg`, `SC_PB_pos`. 214 gene symbols.
 | File | Used by | Contents |
 |---|---|---|
 | `olfactory_genes.xlsx` | `src/oe_analysis.py` | sheet `daniocell+zfin`, 1,177 unique olfactory gene symbols |
-| `olfactory_genes.csv` | `notebooks/deg_analysis.ipynb` | flat olfactory gene list |
+| `olfactory_genes.csv` | nothing in this repo | flat olfactory gene list, kept for the DEG notebooks that live outside it |
 | `spinal_cord_gene_lists.xlsx` | `src/spine_analysis.py` | sheets `All Genes_List` (1,462 symbols) and `3-6 dpf_List` (256), column `ZF_Spinal Cord` |
 
 ## TSV columns used

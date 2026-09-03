@@ -23,12 +23,15 @@ Tables: `Pearson_Correlation_OE.csv`, `Heatmap_All_Proteins_cluster_assignments.
 
 ## `spinal_cord/` — `src/spine_analysis.py`
 
-The same panel set for the 4 SC runs: `UMAP_SC`, `Pearson_Correlation_SC`,
-`Heatmap_All_Proteins_*` (20 k-means clusters), `Heatmap_SC_Proteins_*` (7 detected spinal
-cord markers), `Heatmap_SC_Proteins_3to6dpf_*` (2 markers), `GO_Enrichment_SC` (80 terms).
+The same panel set for the 4 SC runs: `Pearson_Correlation_SC`, `Heatmap_All_Proteins_*`
+(20 k-means clusters), `Heatmap_SC_Proteins_*` (7 detected spinal cord markers),
+`Heatmap_SC_Proteins_3to6dpf_*` (2 markers), `GO_Enrichment_SC` (80 terms).
 
-Tables also include `UMAP_SC_embedding.csv` — the pinned 4-point embedding the panel is drawn
-from, because this UMAP call is not reproducible run to run (main README explains).
+Tables also include `UMAP_SC_embedding.csv` — the pinned 4-point embedding, stored because
+this UMAP call is not reproducible run to run (main README explains). `src/spine_analysis.py`
+draws `UMAP_SC.pdf/png` from it on a rerun, but those files are not committed: with one run
+per condition the panel describes 4 points and carries no cluster structure, so it was left
+out of the figure set.
 
-With one run per condition, the SC correlation and UMAP panels describe 4 points — they are
+With one run per condition, the SC correlation panel likewise describes 4 points — it is
 descriptive, not statistical.

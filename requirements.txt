@@ -5,9 +5,10 @@ scipy
 statsmodels
 scikit-learn
 umap-learn
+igraph            # Leiden clustering in src/umap_tuning*.py
+leidenalg         #   "
 matplotlib
 seaborn
 adjustText
 gprofiler-official
 openpyxl
-jupyterlab        # only needed for the notebooks in archive/notebooks/
